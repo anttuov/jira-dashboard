@@ -1,0 +1,39 @@
+{
+  "config" : {
+
+    "jira-api": {
+      "authName": "jira",
+      "jira_server": "http://absolutemonster.website:8080",
+      "timeout": 30000,
+      "retryOnErrorTimes": 3,
+      "projectName": "TS"
+    },
+
+    "jira-api2": {
+      "authName": "jira",
+      "jira_server": "http://absolutemonster.website:8080",
+      "timeout": 30000,
+      "retryOnErrorTimes": 3,
+      "maxResults": 200,
+      "projectName": "QCAS"
+    },
+
+    "jira-api3": {
+      "authName": "jira",
+      "jira_server": "http://absolutemonster.website:8080",
+      "timeout": 30000,
+      "retryOnErrorTimes": 3,
+      "maxResults": 200,
+      "projectName": "QCA2"
+    },
+    "jira-api4": {
+      "authName": "jira",
+      "jira_server": "http://absolutemonster.website:8080",
+      "timeout": 30000,
+      "retryOnErrorTimes": 3,
+      "maxResults": 200,
+      "projectName": "QCA3"
+    }
+
+  }
+}

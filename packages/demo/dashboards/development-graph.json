@@ -1,0 +1,30 @@
+{
+  "title": "Development graph",
+  "titleVisible": false,
+
+  "description": "Duududuu",
+
+  "layout": {
+    "title": true,
+    "customJS": ["md5.js", "Chart.bundle.min.js"],
+    "gridSize" : { "columns" : 7, "rows" : 6 },
+    "widgets": [{
+      "enabled": true,
+      "row": 3,
+      "col": 1,
+      "width": 2,
+      "height": 3,
+      "widget": "development-graph",
+      "job": "development-graph",
+      "config": ["jira-api2", "development-graph"]
+    }] },
+
+  "config": {
+    "development-graph": {
+      "timeout": 10000,
+	  "title": "Development graph",
+	  "widgetTitle": "Development graph"
+      }
+    }
+  }
+

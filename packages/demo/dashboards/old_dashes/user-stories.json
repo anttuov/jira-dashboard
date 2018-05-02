@@ -1,0 +1,30 @@
+{
+  "layout": {
+    "title": true,
+    "customJS": ["md5.js"],
+    "widgets": [{
+      "enabled": true,
+      "row": 1,
+      "col": 1,
+      "width": 2,
+      "height": 3,
+      "widget": "user-stories",
+      "job": "user-stories",
+      "config": "us"
+    }] 
+  },
+
+  "config": {
+    "us": {
+      "timeout": 30000,
+      "authName": "jira",
+	  "title": "User Stories",
+      "retryOnErrorTimes": 3,
+      "interval": 120000,
+	  "widgetTitle": "User story time",
+      "jira_server": "http://absolutemonster.website:8080",
+      "jql": "project = \"TS\" AND type = Story"
+    }  
+            
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "layout": {
+    "title": true,
+    "customJS": ["md5.js"],
+    "widgets": [
+      {
+      "enabled": true,
+      "row": 1,
+      "col": 1,
+      "width": 2,
+      "height": 3,
+      "widget": "user-stories",
+      "job": "user-stories",
+      "config": ["jira-api", "us"]
+    },
+    {
+      "enabled": true,
+      "row": 2,
+      "col": 2,
+      "width": 2,
+      "height": 2,
+      "widget": "bugs",
+      "job": "bugs",
+      "config": ["jira-api", "high-bugs"]
+    }
+  
+  ] 
+  },
+
+  "config": {
+    "us": {
+	  "title": "User Stories",
+      "interval": 30000,
+	  "widgetTitle": "User story time",
+      "jql": "project = \"TS\" AND type = Story"
+    },
+    "high-bugs": {
+	  "title": "Bugs",
+      "interval": 30000,
+	  "widgetTitle": "Bugs",
+      "jql": "project = \"TS\" AND type = Bug AND updatedDate > -200d ORDER BY priority DESC"
+    }  
+    
+    
+            
+  }
+}

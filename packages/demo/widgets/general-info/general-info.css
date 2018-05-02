@@ -1,0 +1,105 @@
+li {
+  font-size: 1.4em;
+  line-height: 1.2em;
+  list-style: none outside none;
+  padding: 5px;
+  border-radius: 9px;
+  margin-top: -5%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+li div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+li div a {
+  text-decoration: none;
+}
+
+li a {
+  color: inherit;
+  font-style: inherit;
+  text-decoration: underline;
+}
+
+h2 a {
+  color: #454545;
+  text-decoration: none;
+}
+
+h3 {
+	text-decoration: underline;
+}
+
+.projectname-text {
+  width:100%;
+  font-size: 2em;
+  display:inline-block;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  height: 100%;
+}
+
+.projectname-img {
+  width: 48px;
+  height: 48px;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+}
+
+h4 {
+  text-decoration: none;
+  display: inline;
+}
+
+a {
+  color: lightgrey;
+  font-style: inherit;
+  text-decoration: underline;
+}
+
+.overdue h4 {
+  color: red;
+}
+
+.duesoon h4 {
+  color: orange;
+}
+
+.released h4 {
+  color: green;
+}
+
+h1 img {
+  height: 80px;
+  width: 80px;
+  padding-left: 0.2em;
+  padding-right: 0.4em;
+}
+
+div .generalinfo {
+
+  width: 100%;
+  height: 100%;
+}
+
+div .projectname {
+  display: inline-block;
+  height: 3em;
+  text-overflow: ellipsis;
+}
+
+div .release-date {
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+div .releases {
+  display: inline-block;
+}

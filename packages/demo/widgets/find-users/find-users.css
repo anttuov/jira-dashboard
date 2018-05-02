@@ -1,0 +1,77 @@
+li div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+div .members {
+  display: block;  
+  float: left;
+}
+
+ul {
+  display: block;
+  color: white;
+  padding-left: 0;
+}
+
+li {
+  font-size: 1em;
+  padding: 0.1em;
+  border-radius: 9px;
+  display:inline-block;
+}
+
+div .avatar {
+  border-radius: 30px;
+}
+
+div .avatar.unknown {
+  text-align: center;
+  padding-top: 9px;
+  font-size: 48px;
+  color: #f44;
+  border-color: #f44;
+  border-style: solid;
+}
+
+div a {
+  color: inherit;
+  font-style: inherit;
+  text-decoration: none;
+}
+
+.no-blockers-message {
+  font-size: 3em;
+  text-align: center;
+  color: #454545;
+}
+
+.smiley-face {
+  font-size: 4em;
+}
+
+h2 a {
+  color: #454545;
+  text-decoration: none;
+}
+
+h2 span.veryhigh { 
+  border-radius: 5px;
+  border: 1px solid red;
+  padding: 20px;
+  color: red;
+}
+
+h2 span.high { 
+  color: #A32C22;
+}
+
+h2 span.normal { 
+  
+}
+
+img {
+  background-color: #4a6785;
+}
+

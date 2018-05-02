@@ -1,0 +1,52 @@
+li {
+	display: table-cell;
+}
+
+ul {
+  display: table;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-spacing: 10px;
+}
+
+a {
+  color: black;
+  font-style: inherit;
+  text-decoration: none;
+}
+
+
+.data-text {
+  color: white;
+}
+
+
+.healthbar {
+  float: right;
+  color: black;
+  font-size: 2em;
+  
+}
+
+.healthbarcont {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 99%;
+}
+
+.status-done {
+  background-color: #14892c;
+}
+
+.status-inprogress {
+  background-color: #ffd351;
+}
+
+.status-todo {
+  background-color: #4a6785;
+}
+
+
+
+

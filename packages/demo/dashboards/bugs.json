@@ -1,0 +1,31 @@
+{
+    "title": "bugs dash",
+    "titleVisible": false,
+    "description": "bug debug",
+
+    "layout": {
+      "title": true,
+      "customJS": ["md5.js", "Chart.bundle.min.js"],
+      "gridSize" : { "columns" : 7, "rows" : 6 },
+      "widgets": [
+        {
+            "enabled": true,
+            "row": 3,
+            "col": 3,
+            "width": 2,
+            "height": 3,
+            "widget": "user-stories",
+            "job": "user-stories",
+            "config": ["jira-api2", "high-bugs"]
+          }
+        ]
+    },
+        "config": {  
+            "high-bugs": {
+            "title": "User-stories",
+            "interval": 15000,
+            "widgetTitle": "User story",
+            "scrolling": true
+          }
+        } 
+    }

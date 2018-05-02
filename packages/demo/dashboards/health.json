@@ -1,0 +1,32 @@
+{
+    "title": "HEALTHHIII",
+    "titleVisible": false,
+  
+    "description": "Duasdasdududuu",
+  
+    "layout": {
+      "title": true,
+      "customJS": ["md5.js", "jquery.peity.js", "Chart.bundle.min.js"],
+      "gridSize" : { "columns" : 4, "rows" : 6 },
+      "widgets": [{
+        "enabled": true,
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "widget": "health",
+        "job": "health",
+        "config": ["jira-api2", "health"]
+      }] },
+  
+    "config": {
+      "health": {
+        "title": "Health",
+        "retryOnErrorTimes": 3,
+        "interval": 120000,
+        "widgetTitle": "Health"
+      }
+      }
+    }
+  
+  

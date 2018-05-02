@@ -1,0 +1,6 @@
+{
+    "jira":{
+        "username":"${JIRA_USER}",
+        "password":"${JIRA_PASSWORD}"
+    }
+}

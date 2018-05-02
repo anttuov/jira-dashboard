@@ -1,0 +1,125 @@
+{
+    "layout": {
+      "title": true,
+      "customJS": ["md5.js", "Chart.bundle.min.js"],
+      "gridSize" : { "columns" : 7, "rows" : 6 },
+      "widgets": [
+      {
+        "enabled": true,
+        "row": 1,
+        "col": 3,
+        "width": 2,
+        "height": 2,
+        "widget": "find-users",
+        "job": "find-users",
+        "config": ["jira-api3", "users"]
+      },
+      {
+        "enabled": true,
+        "row": 1,
+        "col": 5,
+        "width": 2,
+        "height": 3,
+        "widget": "user-stories",
+        "job": "user-stories",
+        "config": ["jira-api3", "us"]
+      },
+      {
+        "enabled": true,
+        "row": 3,
+        "col": 3,
+        "width": 2,
+        "height": 3,
+        "widget": "bugs",
+        "job": "bugs",
+        "config": ["jira-api3", "high-bugs"]
+      },
+      {
+        "enabled": true,
+        "row": 1,
+        "col": 1,
+        "width": 2,
+        "height": 1,
+        "widget": "general-info",
+        "job": "general-info",
+        "config": ["jira-api3", "general-info"]
+      },
+      {
+        "enabled": true,
+        "row": 2,
+        "col": 1,
+        "width": 2,
+        "height": 1,
+        "widget": "health",
+        "job": "health",
+        "config": ["jira-api3", "health"]
+      },
+      {
+        "enabled": true,
+        "row": 3,
+        "col": 1,
+        "width": 2,
+        "height": 3,
+        "widget": "development-graph",
+        "job": "development-graph",
+        "config": ["jira-api3", "development-graph"]
+      },
+      {
+        "enabled": true,
+        "row": 5,
+        "col": 4,
+        "width": 2,
+        "height": 2,
+        "widget": "testing",
+        "job": "testing",
+        "config": ["jira-api3", "testing"]
+      },
+      {
+        "enabled": true,
+        "row": 1,
+        "col": 7,
+        "width": 0,
+        "height": 1,
+        "widget": "dummy",
+        "job": "dummy"
+      }
+
+    
+    ] 
+    },
+  
+    "config": {
+      "us": {
+        "title": "User Stories",
+        "interval": 15000,
+        "widgetTitle": "User story time"
+      },
+      "high-bugs": {
+        "title": "Bugs",
+        "interval": 15000,
+        "widgetTitle": "Bugs",
+        "scrolling": true
+      },
+      "general-info": {
+        "title": "Current project",
+        "interval": 15000,
+        "widgetTitle": "Current project"
+      },
+      "users": {
+        "title": "Users",
+        "interval": 15000,
+        "widgetTitle": "Users"
+      },
+      "development-graph": {
+        "title": "Development Graph",
+        "interval": 15000,
+        "widgetTitle": "Development Graph"
+      },
+      "testing": {
+        "title": "Testing",
+        "interval": 15000,
+        "widgetTitle": "Testing"
+      }    
+              
+    }
+  }

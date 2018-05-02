@@ -1,0 +1,57 @@
+{
+  "title": "Bugs list",
+  "titleVisible": false,
+
+  "description": "Bugs sorted by priority.",
+
+  "layout": {
+    "title": true,
+    "customJS": ["md5.js"],
+    "gridSize" : { "columns" : 4, "rows" : 4 },
+    "widgets": [{
+      "enabled": true,
+      "row": 1,
+      "col": 1,
+      "width": 1,
+      "height": 2,
+      "widget": "bugs",
+      "job": "bugs",
+      "config": "high-bugs"
+    },
+    {
+      "enabled": true,
+      "row": 2,
+      "col": 1,
+      "width": 2,
+      "height": 5,
+      "widget": "find-users",
+      "job": "find-users",
+      "config": "users"
+    }
+  ] 
+  },
+
+  "config": {
+    "high-bugs": {
+      "timeout": 30000,
+      "authName": "jira",
+	  "title": "Bugs",
+      "retryOnErrorTimes": 3,
+      "interval": 120000,
+	  "widgetTitle": "Bugs",
+      "jira_server": "http://absolutemonster.website:8080",
+      "jql": "project = \"TS\" AND type = Bug AND updatedDate > -200d ORDER BY priority DESC"
+    }  ,
+    "users": {
+      "timeout": 30000,
+      "authName": "jira",
+    "title": "Users",
+      "retryOnErrorTimes": 3,
+      "interval": 120000,
+    "widgetTitle": "Users",
+      "jira_server": "http://absolutemonster.website:8080",
+      "jql": "project = \"TS\""
+    }  
+            
+  }
+}

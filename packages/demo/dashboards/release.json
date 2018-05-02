@@ -1,0 +1,30 @@
+{
+    "title": "Release view",
+    "titleVisible": false,
+  
+    "description": "test",
+  
+    "layout": {
+      "title": true,
+      "customJS": ["md5.js", "jquery.peity.js", "Chart.bundle.min.js"],
+      "gridSize" : { "columns" : 4, "rows" : 6 },
+      "widgets": [{
+        "enabled": true,
+        "row": 1,
+        "col": 1,
+        "width": 2,
+        "height": 6,
+        "widget": "releaseview",
+        "job": "releaseview",
+        "config": ["jira-api2", "health"]
+      }] },
+  
+    "config": {
+      "health": {
+        "retryOnErrorTimes": 3,
+        "interval": 60000
+      }
+      }
+    }
+  
+  

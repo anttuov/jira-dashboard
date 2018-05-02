@@ -1,0 +1,13 @@
+@keyframes glow { 
+    0% { background-color:pink; }
+    25% { background-color:green; }
+    50% { background-color:orange; }
+    75% { background-color:blue; }
+    100% { background-color:red; } 
+}
+
+@keyframes glow2 { 
+    0% { background-color:white; color: black; }
+    50% { background-color:black; color: white; }
+    100% { background-color:white; color: black; } 
+}

@@ -1,0 +1,232 @@
+/*
+
+  There are a few ways to apply themes to your wallboard:
+
+  1: Just uncomment the stylus code below. These variables will override the default
+     ones declared in Atlasboard core and you will be using a local theme!
+
+  2: Change config/theming.js in your wallboard so it points to a different
+     theme name. That theme can be one of the default ones shipped in Atlasboard
+     core (ex: foundation) or it can be a new theme added to your local
+     wallboard "themes" folder
+
+*/
+
+
+$gray-base = #181818;
+$gray-darker = lighten($gray-base, 5%);
+$gray-dark = lighten($gray-base, 20%);
+$gray = #707070;
+$gray-light = lighten($gray, 30%);
+$gray-lighter = lighten($gray-base, 70%);
+
+$blue-dark = #004a82
+$blue-light = #4287b7
+$blue-lighter = #6c8599
+$white = #ffffff
+
+$background-color = #6c8599
+$widget-body-text-color = $blue-lighter
+$dashboard-title-color = $gray-dark
+$dashboard-list-header-title-color = $gray-dark
+$widget-background-color = $gray-darker
+
+$widget-title-color = $white
+
+
+$widget-border = solid 1px $blue-light
+
+$dashboard-list-item-container-border = solid 1px $blue-light
+
+$background-image = url("../../images/bg.jpg")
+
+//$dashboard-list-item-border = solid 1px $blue-light
+//$font-family = 'Roboto Condensed'
+//$gutter-size = 30px
+//
+//$body-padding = 0
+//
+
+//
+//$brand-primary = #205081
+//$brand-success = #1C842F // green
+//$brand-warning = #f6c342 // yellow
+//$brand-danger = #d04437 // red
+//
+//$error-color = $brand-danger
+//$success-color = $brand-success
+//
+
+//
+
+//$widget-padding = $gutter-size
+//$widget-container-padding = 0
+//$widget-content-padding = 0
+//$widget-border = none
+//
+//$widget-title-color = $gray
+//$widget-title-background-color = transparent
+//$widget-title-font-size = 30px
+//$widget-title-padding = 0
+//$widget-title-margin = 0 0 1em 0
+//
+
+
+
+
+
+/*
+
+$dashboard-width = 1920px
+$dashboard-height = 1080px
+
+$font-family = 'Roboto Condensed'
+$gutter-size = 15px
+
+$body-padding = 0
+
+$gray-base = #181818;
+$gray-darker = lighten($gray-base, 5%);
+$gray-dark = lighten($gray-base, 20%);
+$gray = #707070;
+$gray-light = lighten($gray, 30%);
+$gray-lighter = lighten($gray-base, 70%);
+
+$brand-primary = #205081 // blue navy
+$brand-success = #1C842F // green
+$brand-warning = #f6c342 // yellow
+$brand-danger = #d04437 // red
+
+$error-color = $brand-danger
+$success-color = $brand-success
+$warning-color = $brand-warning
+
+$background-color = $gray-darker
+$background-image = none
+
+$dashboard-title-color = $gray
+$dashboard-title-font-size = 1.7em
+
+// widget
+
+$widget-background-color = $gray-base
+$widget-border = solid 1px $gray-dark
+$widget-box-shadow = 0 0 5px $gray-base
+$widget-container-padding = 0
+$widget-content-padding = 0
+$widget-padding = $gutter-size
+$widget-body-text-color = $gray
+
+$widget-title-background-color = transparent
+$widget-title-font-size = 20px
+$widget-title-padding = 0
+$widget-title-margin = 0 0 1em 0
+
+// dashboard list
+
+$dashboard-list-header-title-color = $gray
+$dashboard-list-header-title-font-size = 1.3em
+$dashboard-list-header-title-margin = 0
+
+$dashboard-list-item-container-height = 7em
+$dashboard-list-item-container-margin = 0.5em
+$dashboard-list-item-container-float = left
+$dashboard-list-item-container-padding = 0.2em
+$dashboard-list-item-container-background-image = none
+$dashboard-list-item-container-background-color = $gray-base
+$dashboard-list-item-container-background-color-hover = lighten($gray-darker, 5%)
+$dashboard-list-item-container-border = solid 1px $gray-dark
+$dashboard-list-item-container-borde$dashboard-width = 1920px
+$dashboard-height = 1080px
+
+$font-family = 'Roboto Condensed'
+$gutter-size = 15px
+
+$body-padding = 0
+
+$gray-base = #181818;
+$gray-darker = lighten($gray-base, 5%);
+$gray-dark = lighten($gray-base, 20%);
+$gray = #707070;
+$gray-light = lighten($gray, 30%);
+$gray-lighter = lighten($gray-base, 70%);
+
+$brand-primary = #205081 // blue navy
+$brand-success = #1C842F // green
+$brand-warning = #f6c342 // yellow
+$brand-danger = #d04437 // red
+
+$error-color = $brand-danger
+$success-color = $brand-success
+$warning-color = $brand-warning
+
+$background-color = $gray-darker
+$background-image = none
+
+$dashboard-title-color = $gray
+$dashboard-title-font-size = 1.7em
+
+// widget
+
+$widget-background-color = $gray-base
+$widget-border = solid 1px $gray-dark
+$widget-box-shadow = 0 0 5px $gray-base
+$widget-container-padding = 0
+$widget-content-padding = 0
+$widget-padding = $gutter-size
+$widget-body-text-color = $gray
+
+$widget-title-color = $gray
+$widget-title-background-color = transparent
+$widget-title-font-size = 20px
+$widget-title-padding = 0
+$widget-title-margin = 0 0 1em 0
+
+// dashboard list
+
+$dashboard-list-header-title-color = $gray
+$dashboard-list-header-title-font-size = 1.3em
+$dashboard-list-header-title-margin = 0
+
+$dashboard-list-item-container-height = 7em
+$dashboard-list-item-container-margin = 0.5em
+$dashboard-list-item-container-float = left
+$dashboard-list-item-container-padding = 0.2em
+$dashboard-list-item-container-background-image = none
+$dashboard-list-item-container-background-color = $gray-base
+$dashboard-list-item-container-background-color-hover = lighten($gray-darker, 5%)
+$dashboard-list-item-container-border = solid 1px $gray-dark
+$dashboard-list-item-container-border-hover = solid 1px $gray
+$dashboard-list-item-container-box-shadow = 0 0 5px #111
+
+$dashboard-list-item-padding = 0.3em
+
+$dashboard-list-item-border =   none
+$dashboard-list-item-border-hover = none
+
+$dashboard-list-item-title-color = #fff
+$dashboard-list-item-title-font-size = 1.7em
+
+$dashboard-list-item-description-color = $gray-lighter
+$dashboard-list-item-description-font-size = 0.5em
+
+// log viewer
+
+$log-viewer-background = #fffr-hover = solid 1px $gray
+$dashboard-list-item-container-box-shadow = 0 0 5px #111
+
+$dashboard-list-item-padding = 0.3em
+
+$dashboard-list-item-border =   none
+$dashboard-list-item-border-hover = none
+
+$dashboard-list-item-title-color = #fff
+$dashboard-list-item-title-font-size = 1.7em
+
+$dashboard-list-item-description-color = $gray-lighter
+$dashboard-list-item-description-font-size = 0.5em
+
+// log viewer
+
+$log-viewer-background = #fff
+*/

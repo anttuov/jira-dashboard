@@ -1,0 +1,30 @@
+{
+  "layout": {
+    "title": true,
+    "customJS": ["md5.js"],
+    "widgets": [{
+      "enabled": true,
+      "row": 2,
+      "col": 1,
+      "width": 2,
+      "height": 5,
+      "widget": "find-users",
+      "job": "find-users",
+      "config": "users"
+    }] 
+  },
+
+  "config": {
+    "users": {
+      "timeout": 30000,
+      "authName": "jira",
+	  "title": "Users",
+      "retryOnErrorTimes": 3,
+      "interval": 120000,
+	  "widgetTitle": "Users",
+      "jira_server": "http://absolutemonster.website:8080",
+      "jql": "project = \"QCAS\""
+    }  
+            
+  }
+}
